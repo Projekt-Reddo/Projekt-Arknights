@@ -65,10 +65,10 @@ body {
 
 .table {
     right: 4%;
-    top: 15%;
-    height: 60vh;
+    top: 13%;
+    height: 80vh;
     width: 25vw;
-    background-color: aqua;
+    background-color: #232323;
     position: fixed;
     z-index: 6;
     transform: translateY(-200%);
@@ -90,6 +90,9 @@ body {
 
 .nav-links .right {
     text-align: right;
+    padding-right: 10vh;
+    height: 100%;
+    width: 100%;
 }
 
 .nav-links .right li {
@@ -97,11 +100,11 @@ body {
 }
 
 .nav-links .right li a:hover {
-    color: white;
+    color: #16b8f3;
 }
 
 .nav-links li a {
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 40px;
     font-weight: 1000;

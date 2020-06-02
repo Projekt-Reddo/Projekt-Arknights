@@ -20,6 +20,14 @@ wrapper.addEventListener('click', () => {
     icon.classList.toggle("close");
     table.classList.toggle("open");
 });
+
+window.addEventListener('click', function(e){
+    if ((!table.contains(e.target)) && (!wrapper.contains(e.target))) {
+        icon.classList.remove("close");
+        table.classList.remove("open");
+    }
+});
+
 const imgExia = document.querySelector(".imgExia");
 const ExiaE0 = document.querySelector(".ExiaE0");
 const ExiaE2 = document.querySelector(".ExiaE2");

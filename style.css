@@ -1,0 +1,319 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Tomorrow', sans-serif;
+    
+}
+
+#wrapper {
+    display: inline-block;
+    border-radius: 500px;
+    position: fixed;
+    padding: 50px; 
+    cursor: pointer;
+    z-index: 5;
+    right: 2%;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    margin: -25px;
+    position: absolute;
+    z-index: 5;
+}
+
+.line {
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    z-index: 5;
+    transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.35s;
+}
+
+.top {
+    top: 18%;
+}
+
+.middle {
+    top: 48%;
+}
+
+.bottom {
+    top:78%;
+}
+
+.icon.close .top {
+    transform: rotate(45deg);
+    top: 48%;
+}
+
+.icon.close .bottom, .icon.close .middle {
+    transform: rotate(-45deg);
+    top: 48%;
+}
+
+.table {
+    right: 4%;
+    top: 15%;
+    height: 60vh;
+    width: 25vw;
+    background-color: aqua;
+    position: fixed;
+    z-index: 6;
+    transform: translateY(-200%);
+    opacity: 0;
+    transition: all 1.5s ease-out;
+}
+
+.table.open {
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    height: 100%;
+    width: 100%;
+}
+
+.nav-links .right {
+    text-align: right;
+}
+
+.nav-links .right li {
+    padding-top: 10px;
+}
+
+.nav-links .right li a:hover {
+    color: white;
+}
+
+.nav-links li a {
+    color: black;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 1000;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(67, 67, 67));
+    z-index: -1;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 10%;
+    min-height: 10vh;
+    color: white;
+    align-items: center;
+}
+
+#logo {
+    grid-column: 2/3;
+    font-size: 24px;
+}
+
+.Rhodes {
+    margin-top: 2vh;
+    height: 10vh;
+    width: auto;
+    justify-self: end;
+}
+
+section {
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    width: 100%;
+    height: 60%;
+    position: relative;
+}
+
+.hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.headline {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    font-size: 100px;
+    transform: translate(-20%, -70%);
+    color: white;
+    z-index: 3;
+}
+
+.hero::after {
+    content: "";
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.3;
+}
+
+.space {
+    height: 8vh;
+    width: 100vw;
+}
+
+#sniper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+#defender {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+#supporter {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+#vanguard {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+#guard {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.background {
+    z-index: -1;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
+.grayfill {
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to top, rgb(0, 0, 0), rgb(67, 67, 67));
+    opacity: 0.93;
+}
+
+.backgrd {
+    height: 100%;
+    width: 100%;
+}
+
+.imgExia, .imgSaria {
+    height: 100vh;
+}
+
+.ExiaE0, .SariaE0 {
+    height: 100vh;
+    padding-top: 10vh;
+    transition: all ease 0.3s;
+}
+
+.ExiaE0.appear, .SariaE0.appear {
+    opacity: 1;
+}
+
+.ExiaE0.hide, .SariaE0.hide {
+    opacity: 0;
+}
+
+.imgExiaE0, .imgSariaE0 {
+    height: 80vh;
+}
+
+.ExiaE2, .SariaE2 {
+    height: 100vh;
+    padding-top: 10vh;
+    z-index: 1;
+    position: absolute;
+    transition: all ease-out 0.3s;
+}
+
+.ExiaE2.appear, .SariaE2.appear {
+    opacity: 1;
+}
+
+.ExiaE2.hide, .SariaE2.hide {
+    opacity: 0;
+}
+
+.imgExiaE2, .imgSariaE2 {
+    height: 80vh;
+}
+
+.content {
+    margin: auto;
+}
+
+.classOp {
+    padding: 0.5vh;
+    height: 10vh;
+    width: 30vh;
+    background-color:#232323;
+    display: flex;
+    align-items: center;
+}
+
+.classOp p {
+    color: white;
+    font-size: 30px;
+    height: 100%;
+    width: 70%;
+    padding: 1.5vh;
+    text-align: center;
+}
+
+.classOp .class {
+    height: 100%;
+    width: auto;
+}
+
+.contentOp {
+    padding: 3vh;
+    height: auto;
+    width: 100vh;
+    background-color: darkgrey;
+}
+
+.contentOp h3 {
+    font-size: 50px;
+}
+
+.contentOp p {
+    font-size: 20px;
+    font-weight: 600;
+}

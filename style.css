@@ -16,7 +16,7 @@ body {
 #wrapper {
     display: inline-block;
     border-radius: 500px;
-    position: absolute;
+    position: fixed;
     padding: 50px; 
     cursor: pointer;
     z-index: 5;

@@ -7,6 +7,7 @@ const headline = document.querySelector(".headline");
 
 const tl = new TimelineMax();
 
+//transition effect when start or restart
 tl.fromTo(hero,1, {height: "0%"}, {height: "80%", ease:Power2.easeInOut})
     .fromTo(hero, 1.2, { width: "100%" }, { width: "80%", ease: Power2.easeInOut})
     .fromTo(slider, 1.2, { x: "-100%" }, { x: "0%", ease: Power2.easeInOut}, "-=1.2")
@@ -16,11 +17,13 @@ const wrapper = document.querySelector("#wrapper");
 const icon = document.querySelector(".icon");
 const table = document.querySelector(".table");
 
+//open the menu when click on the hamburger button
 wrapper.addEventListener('click', () => {
     icon.classList.toggle("close");
     table.classList.toggle("open");
 });
 
+// close menu bar when click outside the menu
 window.addEventListener('click', function(e){
     if ((!table.contains(e.target)) && (!wrapper.contains(e.target))) {
         icon.classList.remove("close");
@@ -32,9 +35,11 @@ const imgExia = document.querySelector(".imgExia");
 const ExiaE0 = document.querySelector(".ExiaE0");
 const ExiaE2 = document.querySelector(".ExiaE2");
 
+//set default
 ExiaE2.classList.toggle("hide");
 ExiaE0.classList.toggle("appear");
 
+//change effect when mouse in 
 imgExia.addEventListener('mouseover', () => {
     ExiaE0.classList.toggle("hide");
     ExiaE2.classList.toggle("appear");

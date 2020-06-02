@@ -12,20 +12,14 @@ tl.fromTo(hero,1, {height: "0%"}, {height: "80%", ease:Power2.easeInOut})
     .fromTo(slider, 1.2, { x: "-100%" }, { x: "0%", ease: Power2.easeInOut}, "-=1.2")
     .fromTo(logo, 0.5, {opacity: 0, x: 30},{opacity: 1, x: 0}, "-=0.5")
 
-const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
-const links = document.querySelectorAll(".nav-links li");
-
-// hamburger.addEventListener('click', () => {
-//     navLinks.classList.toggle("open");
-// })
 const wrapper = document.querySelector("#wrapper");
 const icon = document.querySelector(".icon");
+const table = document.querySelector(".table");
 
 wrapper.addEventListener('click', () => {
     icon.classList.toggle("close");
+    table.classList.toggle("open");
 });
-
 const imgExia = document.querySelector(".imgExia");
 const ExiaE0 = document.querySelector(".ExiaE0");
 const ExiaE2 = document.querySelector(".ExiaE2");

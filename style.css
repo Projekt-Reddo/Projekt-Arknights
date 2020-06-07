@@ -6,6 +6,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-y: hidden;
 }
 
 body {
@@ -144,7 +145,7 @@ nav {
     justify-self: end;
 }
 
-section {
+.home {
     display: flex;
     height: 80vh;
     justify-content: center;

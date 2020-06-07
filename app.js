@@ -61,6 +61,48 @@ imgSaria.addEventListener('mouseover', () => {
     SariaE2.classList.toggle("hide");
 });
 
+const imgAngel = document.querySelector(".imgAngel");
+const AngelE0 = document.querySelector(".AngelE0");
+const AngelE2 = document.querySelector(".AngelE2");
+
+AngelE2.classList.toggle("hide");
+AngelE0.classList.toggle("appear");
+
+imgAngel.addEventListener('mouseover', () => {
+    AngelE0.classList.toggle("hide");
+    AngelE2.classList.toggle("appear");
+    AngelE0.classList.toggle("appear");
+    AngelE2.classList.toggle("hide");
+});
+
+const imgTexas = document.querySelector(".imgTexas");
+const TexasE0 = document.querySelector(".TexasE0");
+const TexasE2 = document.querySelector(".TexasE2");
+
+TexasE2.classList.toggle("hide");
+TexasE0.classList.toggle("appear");
+
+imgTexas.addEventListener('mouseover', () => {
+    TexasE0.classList.toggle("hide");
+    TexasE2.classList.toggle("appear");
+    TexasE0.classList.toggle("appear");
+    TexasE2.classList.toggle("hide");
+});
+
+const imgChen = document.querySelector(".imgChen");
+const ChenE0 = document.querySelector(".ChenE0");
+const ChenE2 = document.querySelector(".ChenE2");
+
+ChenE2.classList.toggle("hide");
+ChenE0.classList.toggle("appear");
+
+imgChen.addEventListener('mouseover', () => {
+    ChenE0.classList.toggle("hide");
+    ChenE2.classList.toggle("appear");
+    ChenE0.classList.toggle("appear");
+    ChenE2.classList.toggle("hide");
+});
+
 const imgMostima = document.querySelector(".imgMostima");
 const MostimaE0 = document.querySelector(".MostimaE0");
 const MostimaE2 = document.querySelector(".MostimaE2");
@@ -102,3 +144,22 @@ imgWeedy.addEventListener('mouseover', () => {
     WeedyE0.classList.toggle("appear");
     WeedyE2.classList.toggle("hide");
 });
+
+// Cursor
+const cursor = document.querySelector('.cursor');
+window.addEventListener("mousemove", cursor);
+document.addEventListener('mousemove', e =>{
+    cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
+    });
+document.addEventListener('click', () =>{
+    cursor.classList.add('expand');
+    setTimeout(() => {
+    cursor.classList.remove("expand");
+}, 500);
+}); 
+
+// Animation
+AOS.init({
+    duration: 1500,
+});
+

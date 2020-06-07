@@ -16,5 +16,6 @@
         "stop",
         "vh",
         "width"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }

@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">     <!--link Cursor-->
     <link href="https://fonts.googleapis.com/css2?family=Tomorrow:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> <!--Link hieu ung-->
     <title>Projekt Arkinghts</title>
 </head>
 <body>
+    <div class="cursor"></div>
+    <div class="removeCur"></div>
     <div class="menu">
         <div id="wrapper">
             <div class="circle icon">
@@ -55,7 +59,7 @@
             <div class="grayfill"></div>
             <img class="backgrd" src="Image/cropped-1366-768-1070339.jpg" alt="">
         </div>
-        <div class="imgExia">
+        <div class="imgExia" data-aos="fade-right">
             <div class="ExiaE2">
                 <img class="imgExiaE2" src="Image/Exia/char_103_angel_2.png" alt="">
             </div>
@@ -63,7 +67,7 @@
                 <img class="imgExiaE0" src="Image/Exia/char_103_angel_1.png" alt="">
             </div>
         </div>
-        <div class="content">
+        <div class="content" data-aos="fade-left">
             <div class="classOp">
                 <p><b>Sniper</b></p>
                 <img class="class" src="Image/Exia/class_sniper.png" alt="">
@@ -85,7 +89,7 @@
             <div class="grayfill"></div>
             <img class="backgrd" src="Image/cropped-1366-768-1070339.jpg" alt="">
         </div>
-        <div class="imgSaria">
+        <div class="imgSaria" data-aos="fade-left">
             <div class="SariaE2">
                 <img class="imgSariaE2" src="Image/Saria/char_202_demkni_2.png" alt="">
             </div>
@@ -93,7 +97,7 @@
                 <img class="imgSariaE0" src="Image/Saria/char_202_demkni_1.png" alt="">
             </div>
         </div>
-        <div class="content">
+        <div class="content" data-aos="fade-right">
             <div class="classOp">
                 <p><b>Defender</b></p>
                 <img class="class" src="Image/Saria/class_tank.png" alt="">
@@ -117,12 +121,52 @@
             <div class="grayfill"></div>
             <img class="backgrd" src="Image/cropped-1366-768-1070339.jpg" alt="">
         </div>
+        <div class="imgAngel" data-aos="fade-right">
+            <div class="AngelE2">
+                <img class="imgAngelE2" src="https://gamepress.gg/arknights/sites/arknights/files/2019-11/char_291_aglina_2.png" alt="">
+            </div>
+            <div class="AngelE0">
+                <img class="imgAngelE0" src="https://gamepress.gg/arknights/sites/arknights/files/2019-11/char_291_aglina_1.png" alt="">
+            </div>
+        </div>
+        <div class="content" data-aos="fade-left"> 
+            <div class="classOp">
+                <p><b>Supporter</b></p>
+                <img class="class" src="https://gamepress.gg/arknights/sites/arknights/files/2019-10/class_support.png" alt="">
+            </div>
+            <div class="contentOp">
+            <h3>Angelina</h3>
+            <p>Real name Angelina Ajimu, she was a transporter 
+                responsible for delivering intelligence and special cargo around Siracusa.
+                As an apprentice caster Operator, she now provides logistical support, 
+                battlefield assistance, and tactical coordination for Rhodes Island.</p>
+            </div>
+        </div>
     </div>
     
     <div id="vanguard">
         <div class="background">
             <div class="grayfill"></div>
             <img class="backgrd" src="Image/cropped-1366-768-1070339.jpg" alt="">
+        </div>
+        <div class="imgTexas" data-aos="fade-left">
+            <div class="TexasE2">
+                <img class="imgTexasE2" src="https://gamepress.gg/arknights/sites/arknights/files/2019-11/char_102_texas_2.png" alt="">
+            </div>
+            <div class="TexasE0">
+                <img class="imgTexasE0" src="https://gamepress.gg/arknights/sites/arknights/files/2019-10/char_102_texas_1.png" alt="">
+            </div>
+        </div>
+        <div class="content" data-aos="fade-right">
+            <div class="classOp">
+                <p><b>Vanguard</b></p>
+                <img class="class" src="https://gamepress.gg/arknights/sites/arknights/files/2019-10/class_vanguard.png" alt="">
+            </div>
+            <div class="contentOp">
+            <h3>Texas</h3>
+            <p>Texas is a Penguin Logistics staff member who is extraordinarily skilled in single combat.
+                She was sent to Rhodes Island as a liaison, where she assists with a variety of operations.</p>
+            </div>
         </div>
     </div>
 
@@ -131,6 +175,28 @@
             <div class="grayfill"></div>
             <img class="backgrd" src="Image/cropped-1366-768-1070339.jpg" alt="">
         </div>
+        <div class="imgChen" data-aos="fade-right">
+            <div class="ChenE2">
+                <img class="imgChenE2" src="https://gamepress.gg/arknights/sites/arknights/files/2019-11/char_010_chen_2.png" alt="">
+            </div>
+            <div class="ChenE0">
+                <img class="imgChenE0" src="https://gamepress.gg/arknights/sites/arknights/files/2019-10/char_010_chen_1_0.png" alt="">
+            </div>
+        </div>
+        <div class="content" data-aos="fade-left">
+            <div class="classOp">
+                <p><b>Guard</b></p>
+                <img class="class" src="https://gamepress.gg/arknights/sites/arknights/files/2019-10/class_guard.png" alt="">
+            </div>
+            <div class="contentOp">
+                <h3>Ch'en</h3>
+                <p>Ch'en, head of the Lungmen Guard Department's Special Inspection Unit, 
+                    graduated from the Royal Victorian Guard School with superb grades and outstanding achievements. 
+                    During her time with the Department, she cracked down on crime, fought violent offenders, 
+                    tracked down armed fugitives, and brought down international criminals.
+                    Now works at Rhodes Island, providing on-site tactical command.</p>
+            </div>
+        </div>
     </div>
 
     <div id="caster">
@@ -138,7 +204,7 @@
             <div class="grayfill"></div>
             <img class="backgrd" src="Image/cropped-1366-768-1070339.jpg" alt="">
         </div>
-        <div class="imgMostima">
+        <div class="imgMostima" data-aos="fade-left">
             <div class="MostimaE2">
                 <img class="imgMostimaE2" src="Image/Mostima/char_213_mostma_2_0.png" alt="">
             </div>
@@ -146,7 +212,7 @@
                 <img class="imgMostimaE0" src="Image/Mostima/char_213_mostma_1_2.png" alt="">
             </div>
         </div>
-        <div class="content">
+        <div class="content" data-aos="fade-right">
             <div class="classOp">
                 <p><b>Caster</b></p>
                 <img class="class" src="Image/Mostima/class_caster.png" alt="">
@@ -163,7 +229,7 @@
             <div class="grayfill"></div>
             <img class="backgrd" src="Image/cropped-1366-768-1070339.jpg" alt="">
         </div>
-        <div class="imgNight">
+        <div class="imgNight" data-aos="fade-right">
             <div class="NightE2">
                 <img class="imgNightE2" src="Image/Nightingale/char_179_cgbird_2.png" alt="">
             </div>
@@ -171,7 +237,7 @@
                 <img class="imgNightE0" src="Image/Nightingale/char_179_cgbird_1.png" alt="">
             </div>
         </div>
-        <div class="content">
+        <div class="content" data-aos="fade-left">
             <div class="classOp">
                 <p><b>Medic</b></p>
                 <img class="class" src="Image/Nightingale/class_medic.png" alt="">
@@ -189,7 +255,7 @@
             <div class="grayfill"></div>
             <img class="backgrd" src="Image/cropped-1366-768-1070339.jpg" alt="">
         </div>
-        <div class="imgWeedy">
+        <div class="imgWeedy" data-aos="fade-right">
             <div class="WeedyE2">
                 <img class="imgWeedyE2" src="Image/Weedy/char_400_weedy_2.png" alt="">
             </div>
@@ -197,7 +263,7 @@
                 <img class="imgWeedyE0" src="Image/Weedy/char_400_weedy_1_0.png" alt="">
             </div>
         </div>
-        <div class="content">
+        <div class="content" data-aos="fade-right">
             <div class="classOp">
                 <p><b>Specialist</b></p>
                 <img class="class" src="Image/Weedy/class_specialist.png" alt="">
@@ -211,8 +277,7 @@
     </div>
 
     <script scr="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
         integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"

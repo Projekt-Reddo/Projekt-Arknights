@@ -6,13 +6,13 @@
 
 html {
     scroll-behavior: smooth;
+    overflow: hidden;
 }
 
 body {
     font-family: 'Tomorrow', sans-serif;
-    overflow-x: hidden;
-    overflow-y: scroll;
     width: 100vw;
+    cursor: none;
 }
 
 #wrapper {
@@ -150,7 +150,7 @@ nav {
     justify-self: end;
 }
 
-section {
+.home {
     display: flex;
     height: 80vh;
     justify-content: center;
@@ -227,31 +227,32 @@ section {
 .backgrd {
     height: 100%;
     width: 100%;
+    opacity: 1;
 }
 
-.imgExia, .imgSaria, .imgMostima, .imgNight, .imgWeedy {
+.imgExia, .imgSaria, .imgMostima, .imgNight, .imgWeedy, .imgAngel, .imgTexas, .imgChen {
     height: 100vh;
 }
 
-.ExiaE0, .SariaE0, .MostimaE0, .NightE0, .WeedyE0 {
+.ExiaE0, .SariaE0, .MostimaE0, .NightE0, .WeedyE0, .AngelE0, .TexasE0, .ChenE0 {
     height: 100vh;
     padding-top: 10vh;
     transition: all ease 0.3s;
 }
 
-.ExiaE0.appear, .SariaE0.appear, .MostimaE0.appear, .NightE0.appear, .WeedyE0.appear {
+.ExiaE0.appear, .SariaE0.appear, .MostimaE0.appear, .NightE0.appear, .WeedyE0.appear, .AngelE0.appear, .TexasE0.appear, .ChenE0.appear {
     opacity: 1;
 }
 
-.ExiaE0.hide, .SariaE0.hide, .MostimaE0.hide, .NightE0.hide, .WeedyE0.hide {
+.ExiaE0.hide, .SariaE0.hide, .MostimaE0.hide, .NightE0.hide, .WeedyE0.hide, .AngelE0.hide, .TexasE0.hide, .ChenE0.hide {
     opacity: 0;
 }
 
-.imgExiaE0, .imgSariaE0, .imgMostimaE0, .imgNightE0, .imgWeedyE0 {
+.imgExiaE0, .imgSariaE0, .imgMostimaE0, .imgNightE0, .imgWeedyE0, .imgAngelE0, .imgTexasE0, .imgChenE0  {
     height: 80vh;
 }
 
-.ExiaE2, .SariaE2, .MostimaE2, .NightE2, .WeedyE2 {
+.ExiaE2, .SariaE2, .MostimaE2, .NightE2, .WeedyE2, .AngelE2, .TexasE2, .ChenE2 {
     height: 100vh;
     padding-top: 10vh;
     z-index: 1;
@@ -259,15 +260,15 @@ section {
     transition: all ease-out 0.3s;
 }
 
-.ExiaE2.appear, .SariaE2.appear, .MostimaE2.appear, .NightE2.appear, .WeedyE2.appear {
+.ExiaE2.appear, .SariaE2.appear, .MostimaE2.appear, .NightE2.appear, .WeedyE2.appear, .AngelE2.appear, .TexasE2.appear, .ChenE2.appear {
     opacity: 1;
 }
 
-.ExiaE2.hide, .SariaE2.hide, .MostimaE2.hide, .NightE2.hide, .WeedyE2.hide {
+.ExiaE2.hide, .SariaE2.hide, .MostimaE2.hide, .NightE2.hide, .WeedyE2.hide, .AngelE2.hide, .TexasE2.hide, .ChenE2.hide {
     opacity: 0;
 }
 
-.imgExiaE2, .imgSariaE2, .imgMostimaE2, .imgNightE2, .imgWeedyE2 {
+.imgExiaE2, .imgSariaE2, .imgMostimaE2, .imgNightE2, .imgWeedyE2, .imgAngelE2, .imgTexasE2, .imgChenE2 {
     height: 80vh;
 }
 
@@ -312,4 +313,44 @@ section {
 .contentOp p {
     font-size: 20px;
     font-weight: 600;
+}
+/*
+    Cursor Vi
+
+*/
+.cursor {
+    width: 12px;
+    height: 18px;
+    border: 1px solid #e8ffe8;
+    background-color: #a6fff2;
+    transform: skewY(45deg);
+    position: absolute;
+    transition-duration: 50ms;
+    transition-timing-function: ease-out;
+    margin-top: 20px;  /*20,12*/
+    margin-left: 12px;
+    z-index: 20;
+}
+
+.cursor::before{
+    content: "";
+    width: 6px;
+    height: 9px;
+    border: 1px solid #74f9ff;
+    background-color: #00e0ff;
+    position: absolute;
+    transition-duration: 50ms;
+    transition-timing-function: ease-out;
+    margin-top: 2px;    /*2,1*/
+    margin-left: 1px;
+}
+
+.expand{
+    border: 1px solid #292725;
+    background-color: #c40018;
+}
+
+.expand::before{
+    border: 1px solid #e9290f;
+    background-color: #ff6107;
 }

@@ -171,15 +171,27 @@ AOS.init({
     duration: 1500,
 });
 
-/*
-from line 114 to 198: scroll snap stop
-*/
-
 // select sections parent
 const sections = document.querySelectorAll('section');
 
 // set pointer to screen
 let pointer = 0;
+
+// set pointer when click menu
+function setPointer(x) {
+    check=x.id;
+    switch (check) {
+        case '0': pointer = 0; break;
+        case '1': pointer = 1; break;
+        case '2': pointer = 2; break;
+        case '3': pointer = 3; break;
+        case '4': pointer = 4; break;
+        case '5': pointer = 5; break;
+        case '6': pointer = 6; break;
+        case '7': pointer = 7; break;
+        case '8': pointer = 8; break;
+    }
+}
 
 // set time before effect to 0
 let lastTime = 0;

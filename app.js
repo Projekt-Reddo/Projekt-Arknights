@@ -196,14 +196,14 @@ function setPointer(x) {
 // set time before effect to 0
 let lastTime = 0;
 
+let numOfWheel = 0;
+
 // when 'wheel' of mouse move => effect
 window.addEventListener('wheel', (e) => {
     // get 'delta' value to determine wheel up or down
     const delta = e.wheelDelta;
-    
-    // if 'wheel' many time in effect duration => prevent event
     const currentTime = new Date().getTime();
-    if (currentTime - lastTime < 1000) {
+    if (currentTime - lastTime < 800) {
         e.preventDefault();
         return;
     }
@@ -216,21 +216,22 @@ window.addEventListener('wheel', (e) => {
         // loop for each element, if number of element = pointer => scroll to that element
         sections.forEach((section, i) => {
             if (i === pointer) {
-                section.scrollIntoView({behavior: 'smooth'});
+                section.scrollIntoView({behavior: 'smooth', block: 'center'});
             }
         });
     // 'delta' > 0 => wheel up
-    } else {
+    } else if (delta > 0) {
         // if pointer < number of element => return pointer to 1
         if (pointer <1) return;
         pointer--;
         // loop for each element, if number of element = pointer => scroll to that element
         sections.forEach((section, i) => {
             if (i === pointer) {
-                section.scrollIntoView({behavior: 'smooth'});
+                section.scrollIntoView({behavior: 'smooth', block: 'center'});
             }
         });
     }
+    lastTime = currentTime;
 });
 
 // when press keyboard => effect
@@ -238,7 +239,7 @@ window.addEventListener('keydown', (e) => {
     
     // if 'wheel' many time in effect duration => prevent event
     const currentTime = new Date().getTime();
-    if (currentTime - lastTime < 1000) {
+    if (currentTime - lastTime < 800) {
         e.preventDefault();
         return;
     }
@@ -267,4 +268,5 @@ window.addEventListener('keydown', (e) => {
             }
         });
     }
+    lastTime = currentTime;
 });

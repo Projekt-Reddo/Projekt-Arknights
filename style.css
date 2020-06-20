@@ -20,7 +20,7 @@ body {
     border-radius: 500px;
     position: fixed;
     padding: 50px; 
-    cursor: pointer;
+    cursor: none;
     z-index: 5;
     right: 2%;
 }
@@ -114,6 +114,7 @@ body {
     text-decoration: none;
     font-size: 40px;
     font-weight: 1000;
+    cursor: none;
 }
 
 #header {
@@ -322,14 +323,15 @@ nav {
     width: 12px;
     height: 18px;
     border: 1px solid #e8ffe8;
-    background-color: #a6fff2;
+    background: #a6fff2;
     transform: skewY(45deg);
     position: absolute;
-    transition-duration: 50ms;
-    transition-timing-function: ease-out;
-    margin-top: 20px;  /*20,12*/
+    transition-duration: 50;
+    transition-timing-function: ease;
+    pointer-events: none;
+    margin-top: 20px;  
     margin-left: 12px;
-    z-index: 20;
+    z-index: 100;
 }
 
 .cursor::before{
@@ -339,9 +341,9 @@ nav {
     border: 1px solid #74f9ff;
     background-color: #00e0ff;
     position: absolute;
-    transition-duration: 50ms;
-    transition-timing-function: ease-out;
-    margin-top: 2px;    /*2,1*/
+    transition-duration: 50;
+    transition-timing-function: ease;
+    margin-top: 2px;   
     margin-left: 1px;
 }
 

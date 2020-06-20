@@ -153,24 +153,6 @@ imgWeedy.addEventListener('mouseover', () => {
     WeedyE2.classList.toggle("hide");
 });
 
-// Cursor
-const cursor = document.querySelector('.cursor');
-window.addEventListener("mousemove", cursor);
-document.addEventListener('mousemove', e =>{
-    cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
-    });
-document.addEventListener('click', () =>{
-    cursor.classList.add('expand');
-    setTimeout(() => {
-    cursor.classList.remove("expand");
-}, 500);
-}); 
-
-// Animation
-AOS.init({
-    duration: 1500,
-});
-
 // select sections parent
 const sections = document.querySelectorAll('section');
 
@@ -269,4 +251,30 @@ window.addEventListener('keydown', (e) => {
         });
     }
     lastTime = currentTime;
+});
+
+// Cursor
+// select Cursor parent
+const Cursor = document.querySelector('.cursor');
+
+window.addEventListener("mousemove", cursor);
+// fucntion cursor
+function cursor(e){
+    Cursor.style.top = e.pageY + "px";
+    Cursor.style.left = e.pageX + "px";
+}
+// when Cursor click => effect
+document.addEventListener('click', () =>{
+    // Add class expand
+    Cursor.classList.add('expand');
+    // Remove expand with duration
+    setTimeout(() => {
+    Cursor.classList.remove("expand");
+}, 500);
+
+}); 
+
+// Animation
+AOS.init({
+    duration: 1500,
 });
